@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matWebForms", "matWebForms.csproj", "{427162E3-229D-491B-8C9C-E006292D2A58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{427162E3-229D-491B-8C9C-E006292D2A58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427162E3-229D-491B-8C9C-E006292D2A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427162E3-229D-491B-8C9C-E006292D2A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427162E3-229D-491B-8C9C-E006292D2A58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0A5054F-66F9-470A-A1E6-9906A36E33F6}
+	EndGlobalSection
+EndGlobal

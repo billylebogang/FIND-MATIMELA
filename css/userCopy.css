@@ -1,0 +1,86 @@
+
+.profile-container{
+    padding: 5%;
+    background-color: brown;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+    grid-row-gap: 25px;
+
+}
+
+.user-details{
+    align-items: center;
+    text-align: start;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    background-color: darkgray;
+}
+.user-details,
+.profil-here{
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 350px;
+}
+
+.profile-here{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: darksalmon;
+    
+}
+.user-name{
+    margin-left:15px;
+}
+
+.user-dashboard{
+    padding-top: 20px;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.dash-container{
+    /* display: grid;
+    grid-template-columns: .4fr .6fr; */
+    width: 100%;
+    height: auto;
+}
+
+.dash-buttons-container{
+    padding: 10%;
+    background-color: blueviolet;
+    /* display:  grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px ; */
+   
+}
+.dash-btn{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    text-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 250px;
+    min-height:70px;
+}
+
+.btn1{
+    background-color: chocolate;
+
+}
+.btn2{
+    background-color: coral;
+}
+.btn4{
+    background-color: cornflowerblue;
+}
+.btn3{
+background-color: darkgoldenrod;
+}
+
+.btn6,
+.btn5{
+    background-color: darkkhaki;
+}
+
+
