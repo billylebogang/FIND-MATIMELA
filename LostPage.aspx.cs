@@ -115,7 +115,76 @@ namespace matWebForms
 
 
             return animalList;
-        } 
+        }
+
+        public void getLostReport(string location)
+        {
+            string rEartag;
+            string rBrand;
+            string rType;
+            string rColor;
+            string rDateLost;
+            string rLocation;
+            string rDescription;
+            string rImageSrc = "";
+
+            try
+
+            {
+                SqlConnection reportcon = new SqlConnection(constr);
+
+                string query = "select * from lostAnimals where location = '"+location+"';"; // selection query
+
+                SqlCommand cmd = new SqlCommand(query, reportcon);
+
+
+                reportcon.Open();
+
+
+                SqlDataReader dr = cmd.ExecuteReader();
+
+
+
+                cmd.Connection = reportcon;
+
+                if (dr.HasRows)
+                {
+                    while (dr.Read()) //looping through the rows
+                    {
+
+
+                        //setting the return values from reader
+                        rEartag = dr.GetString(0);
+                        rBrand = dr.GetString(1);
+                        rType = dr.GetString(2);
+                        rColor = dr.GetString(3);
+                        object dateTime = dr.GetDateTime(4);
+                        rDateLost = Convert.ToString(dateTime);
+                        rLocation = dr.GetString(5);
+                        rDescription = dr.GetString(6);
+
+
+
+                    }
+
+                }
+                else
+                {
+                    Response.Write("<script>alert('something went wrong');</script>"); // this will show if the rows have ended or now rows
+                }
+                reportcon.Close();
+            }
+
+
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('something went wrong');</script>"); //showing exception
+            }
+
+
+
+
+        }
 
     }
 }

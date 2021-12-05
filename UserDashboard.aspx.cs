@@ -47,7 +47,7 @@ namespace matWebForms
 
         protected void reportsLink_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Reports.aspx");
         }
 
         protected void foundAnimals_Click(object sender, EventArgs e)

@@ -1755,6 +1755,7 @@
     <Content Include="Web.config" />
     <Content Include="Landing.aspx" />
     <Content Include="FoundPage.aspx" />
+    <Content Include="Reports.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="foundAnimalModel.cs" />
@@ -1803,6 +1804,13 @@
     </Compile>
     <Compile Include="FoundPage.aspx.designer.cs">
       <DependentUpon>FoundPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
